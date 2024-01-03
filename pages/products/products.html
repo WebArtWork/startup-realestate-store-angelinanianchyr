@@ -1,0 +1,31 @@
+<div class="content">
+    {{{'/templates/angelinanianchyr/components/header'|c|safe}}}
+    <main class="main">
+
+        <div class="products__title">
+            <p>Тумбочки</p>
+        </div>
+
+        <div class="wraper">
+            {{{'/templates/angelinanianchyr/components/sidebar'|c({categories:
+            categories, url: '/services'})|safe}}}
+
+            <div class="products">
+                <div class="products__item">
+                    {% for products in products %}
+                    <div class="products__item-photo">
+                        <a class="products__item-link" href="/product">
+                            <img src="{{{products.thumb}}}" alt="">
+                            <figcaption class="products__item-text">{{{products.name}}}</figcaption>
+                        </a>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+
+        </div>
+
+    </main>
+    {{{'/templates/angelinanianchyr/components/footer'|c({data:
+    store.data, footer: footer})|safe}}}
+</div>

@@ -1,0 +1,16 @@
+<footer class="footer">
+    <div class="information">
+        <p class="information__title">КОНТАКТИ</p>
+        <p class="information__text">Адреса: м. Кам'янець-Подільський,проспект Грушевського, 31</p>
+        <p class="information__text">Номер телефону: 099 99 99 999</p>
+        <p class="information__text">Графік роботи: ПН-ПТ 09:00-17:00</p>
+    </div>
+
+    {% if data.instagram %}
+    <div class="contact__block">
+        <a href="{{{data.instagram}}}" target="_blank"><img class="network"
+                src="/angelinanianchyr/img/instagram.png"></a>
+    </div>
+    {% endif %}
+
+</footer>

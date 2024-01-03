@@ -1,0 +1,38 @@
+<div class="content">
+    {{{'/templates/angelinanianchyr/components/header'|c|safe}}}
+    <!--все що між header i footer  -->
+    <main class="main">
+        <div class="furniture">
+            <div class="slider-container">
+                <div class="slider-main">
+                    {% for portfolio in portfolio %}
+                    <div class="slider-main__item">
+                        <img src="{{{portfolio.thumb}}}" alt="{{{portfolio.name}}}">
+                    </div>
+                    {% endfor %}
+
+                </div>
+                <div class="slider-secondary">
+                    {% for portfolio in portfolio %}
+                    <div class="slider-secondary__item">
+                        <img src="{{{portfolio.thumb}}}" alt="{{{portfolio.name}}}">
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+            <div class="furniture__description">
+                <p class="furniture__description-title">Основні характеристики</p>
+                <p class="furniture__description-text">Висота: 700 см</p>
+                <p class="furniture__description-text">Ширина: 500 см</p>
+                <p class="furniture__description-text">Матеріал: дерево, плитка</p>
+                <p class="furniture__description-text">Колір: сірий, коричневий, білий</p>
+                <p class="furniture__description-text">Ціна: 3 000 грн</p>
+                <p class="furniture__description-text">Країна виробник: Україна</p>
+
+                <a href="#"><button class="furniture__button">Замовити</button></a>
+            </div>
+        </div>
+    </main>
+    {{{'/templates/angelinanianchyr/components/footer'|c({data:
+    store.data, footer: footer})|safe}}}
+</div>

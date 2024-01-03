@@ -1,0 +1,22 @@
+<div class="content">
+    {{{'/templates/angelinanianchyr/components/header'|c|safe}}}
+    <main class="main">
+        <div class="furnitures">
+            <div class="furnitures__title">
+                <p>Меблі для кухні</p>
+            </div>
+            <div class="furnitures__item">
+                {% for portfolios in portfolios %}
+                <div class="furnitures__item-photo">
+                    <a class="furnitures__item-link" href="/portfolio">
+                        <img src="{{{portfolios.thumb}}}">
+                        <figcaption class="furnitures__item-text">{{{portfolios.name}}}</figcaption>
+                    </a>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </main>
+    {{{'/templates/angelinanianchyr/components/footer'|c({data:
+    store.data, footer: footer})|safe}}}
+</div>

@@ -1,0 +1,36 @@
+<div class="content">
+    {{{'/templates/angelinanianchyr/components/header'|c|safe}}}
+    <main class="main">
+        <div class="produce">
+            <div class="sliders-basic">
+                <div class="sliders-one">
+                    {% for service in service %}
+                    <div class="sliders-one__item">
+                        <img src="{{{service.thumb}}}" alt="{{{service.name}}}">
+                    </div>
+                    {% endfor %}
+                </div>
+                <div class="sliders-two">
+                    {% for service in service %}
+                    <div class="sliders-two__item">
+                        <img src="{{{service.thumb}}}" alt="{{{service.name}}}">
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+            <div class="produce__description">
+                <p class="produce__description-title">Основні характеристики</p>
+                <p class="produce__description-text">Висота: 700 см</p>
+                <p class="produce__description-text">Ширина: 500 см</p>
+                <p class="produce__description-text">Матеріал: дерево, плитка</p>
+                <p class="produce__description-text">Колір: сірий, коричневий, білий</p>
+                <p class="produce__description-text">Ціна: 3 000 грн</p>
+                <p class="produce__description-text">Країна виробник: Україна</p>
+
+                <a href="#"><button class="produce__button">Замовити</button></a>
+            </div>
+        </div>
+    </main>
+    {{{'/templates/angelinanianchyr/components/footer'|c({data:
+    store.data, footer: footer})|safe}}}
+</div>

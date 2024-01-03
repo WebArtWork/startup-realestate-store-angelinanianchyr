@@ -1,0 +1,75 @@
+{
+	"title": "Page Title",
+	"top_portfolios": [{
+	    "name": "Антресоль - 5 000грн",
+	    "thumb": "/angelinanianchyr/img/9.jpg"
+	}, {
+	    "name": "Антресоль - 7 000грн",
+	    "thumb": "/angelinanianchyr/img/10.jpg"
+	}, {
+	    "name": "Антресоль - 9 000грн",
+	    "thumb": "/angelinanianchyr/img/4.jpg"
+	}],
+	"products": [{
+	    "name": "Меблі для ванної",
+	    "thumb": "/angelinanianchyr/img/1.jpg"
+	},{
+		"name": "Меблі для кухні",
+	    "thumb": "/angelinanianchyr/img/2.jpg"
+	},{
+		"name": "Меблі для спальні",
+	    "thumb": "/angelinanianchyr/img/3.jpg"
+	},{
+		"name": "Меблі для передпокою",
+	    "thumb": "/angelinanianchyr/img/4.jpg"
+	}],
+	"services": [{
+	    "name": "Шкафчики",
+	    "thumb": "/angelinanianchyr/img/1.jpg"
+	},{
+		"name": "Тумбочка",
+	    "thumb": "/angelinanianchyr/img/1.jpg"
+	},{
+		"name": "Раковина",
+	    "thumb": "/angelinanianchyr/img/1.jpg"
+	},{
+		"name": "Довга тумбочка",
+	    "thumb": "/angelinanianchyr/img/1.jpg"
+	},{
+		"name": "Шкафчики",
+	    "thumb": "/angelinanianchyr/img/1.jpg"
+	}],
+	"service": [{
+	    "name": "Шкафчики",
+	    "thumb": "/angelinanianchyr/img/3.jpg"
+	},{
+		"name": "Тумбочка",
+	    "thumb": "/angelinanianchyr/img/3.jpg"
+	},{
+		"name": "Раковина",
+	    "thumb": "/angelinanianchyr/img/3.jpg"
+	},{
+		"name": "Довга тумбочка",
+	    "thumb": "/angelinanianchyr/img/3.jpg"
+	},{
+		"name": "Шкафчики",
+	    "thumb": "/angelinanianchyr/img/3.jpg"
+	}],
+	"articles": [{
+		"name": "Погода на сьогодні",
+	    "description": "Вдень у Кам'янці-Подільському - хмарно, але вечір обіцяє бути ясними",
+	    "thumb": "/angelinanianchyr/img/7.jpg"
+	},{
+		"name": "Погода на сьогодні",
+	    "description": "Вдень у Кам'янці-Подільському - хмарно, але вечір обіцяє бути ясними",
+	    "thumb": "/angelinanianchyr/img/7.jpg"
+	},{
+		"name": "Погода на сьогодні",
+	    "description": "Вдень у Кам'янці-Подільському - хмарно, але вечір обіцяє бути ясними",
+	    "thumb": "/angelinanianchyr/img/7.jpg"
+	},{
+		"name": "Погода на сьогодні",
+	    "description": "Вдень у Кам'янці-Подільському - хмарно, але вечір обіцяє бути ясними",
+	    "thumb": "/angelinanianchyr/img/7.jpg"
+	}]
+}

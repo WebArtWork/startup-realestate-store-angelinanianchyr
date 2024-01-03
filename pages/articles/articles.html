@@ -1,0 +1,28 @@
+<div class="content">
+    {{{'/templates/angelinanianchyr/components/header'|c|safe}}}
+    <main class="main">
+        <!-- all news -->
+        <div class="articles">
+            <div class="articles__title">
+                <p>Новини</p>
+            </div>
+            <!-- main div for news-->
+            <div class="articles__news-all">
+
+                {% for article in articles %}
+                <div class="articles__news-link">
+                    <div class="articles__news">
+                        <img class="articles__news-photo" src="{{{article.thumb}}}">
+                        <p class="articles__news-text">{{{article.description}}}</p>
+                    </div>
+                    <a class="articles__button" href="/article">
+                        <button class="articles__button-text">Читати докладніше</button>
+                    </a>
+                </div>
+                {% endfor %}
+
+            </div>
+    </main>
+    {{{'/templates/angelinanianchyr/components/footer'|c({data:
+    store.data, footer: footer})|safe}}}
+</div>

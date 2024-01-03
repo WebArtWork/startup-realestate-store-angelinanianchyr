@@ -1,0 +1,97 @@
+<div class="content">
+    {{{'/templates/angelinanianchyr/components/header'|c|safe}}}
+    <main class="main">
+        <!-- top 3 product -->
+        <div class="sellings">
+            <div>
+                <p class="title">Топ продажу</p>
+            </div>
+            <div class="selling">
+                {% for portfolio in top_portfolios %}
+                <div class="selling__item">
+                    <a class="selling__item-link" href="/portfolio">
+                        <img src="{{{portfolio.thumb}}}">
+                        <figcaption class="selling__item-text">{{{portfolio.name}}}</figcaption>
+                    </a>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+        <!-- all products collection -->
+        <div class="portfolios">
+            <div>
+                <p class="title">Товар</p>
+            </div>
+            <div class="portfolios__items">
+                {% for product in products %}
+                <div class="portfolios__items-photo">
+                    <a class="portfolios__items-link" href="portfolios">
+                        <img src="{{{product.thumb}}}">
+                        <figcaption class="portfolios__items-text">{{{product.name}}}</figcaption>
+                    </a>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+        <!-- послуги -->
+        <div class="services">
+            <div>
+                <p class="title">Послуги</p>
+            </div>
+            <div class="services__items">
+                {% for services in services %}
+                <div class="services__items-photo">
+                    <a class="services__items-link" href="/products">
+                        <img src="{{{services.thumb}}}">
+                        <figcaption class="services__items-text">{{{services.name}}}</figcaption>
+                    </a>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+        <!--service-->
+        <div class="service">
+            <div>
+                <p class="title">Сервіс</p>
+            </div>
+            <div class="service__items">
+                {% for service in service %}
+                <div class="service__items-photo">
+                    <a class="service__items-link" href="/services">
+                        <img src="{{{service.thumb}}}">
+                        <figcaption class="service__items-text">{{{service.name}}}</figcaption>
+                    </a>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+        <!--  news -->
+        <div class="tidings">
+            <div>
+                <p class="title">Новини</p>
+            </div>
+            <div class="tidings__news">
+                {% for article in articles %}
+                <div class="tidings__blocks">
+                    <div class="tidings__block-title">
+                        <p>{{{article.name}}}</p>
+                    </div>
+                    <div class="tidings__block">
+                        <a class="tidings__block-photo">
+                            <img src="{{{article.thumb}}}">
+                        </a>
+                        <div class="tidings__filling">
+                            <p class="tidings__filling-text">{{{article.description}}}</p>
+                            <a class="tidings__button" href="/articles">
+                                <button class="tidings__button-text">Дивитися більше</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </main>
+    {{{'/templates/angelinanianchyr/components/footer'|c({data:
+    store.data, footer: footer})|safe}}}
+</div>
